@@ -12,6 +12,6 @@ echo "Secret message" | openssl rsautl -encrypt -pubin -inkey key1.public_key -o
 openssl rsautl -decrypt -inkey key1.private_key -in encrypted_data.bin
 openssl rsautl -decrypt -inkey key2.private_key -in encrypted_data.bin
 
-echo "Secret message2" | openssl rsautl -encrypt -pubin -inkey key2.public_key -out encrypted_data_2.bin
+echo "Secret message2" | openssl rsautl -encrypt -pubin -inkey key2.public_key -out encrypted_data2.bin
 openssl rsautl -decrypt -inkey key1.private_key -in encrypted_data2.bin
 openssl rsautl -decrypt -inkey key2.private_key -in encrypted_data2.bin
